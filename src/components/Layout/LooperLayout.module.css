@@ -1,0 +1,67 @@
+.layout {
+  min-height: 100vh;
+  background: #121212;
+  color: #e0e0e0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.tracks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  padding: 24px;
+}
+
+.initOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #121212;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  z-index: 1000;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.startBtn {
+  padding: 16px 48px;
+  font-size: 1.1rem;
+  background: #ff6b35;
+  border: none;
+  color: #000;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background 0.2s;
+}
+
+.startBtn:hover {
+  background: #ff8555;
+}
+
+.shortcuts {
+  padding: 8px 24px;
+  font-size: 0.65rem;
+  color: #444;
+  text-align: center;
+  border-top: 1px solid #1a1a1a;
+}

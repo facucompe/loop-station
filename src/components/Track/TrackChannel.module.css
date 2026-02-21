@@ -1,0 +1,126 @@
+.channel {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.channel.recording {
+  border-color: #e74c3c;
+  box-shadow: 0 0 12px rgba(231, 76, 60, 0.2);
+}
+
+.channel.playing {
+  border-color: #2ecc71;
+  box-shadow: 0 0 12px rgba(46, 204, 113, 0.2);
+}
+
+.channel.overdubbing {
+  border-color: #f39c12;
+  box-shadow: 0 0 12px rgba(243, 156, 18, 0.2);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trackLabel {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ff6b35;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.stateLabel {
+  font-size: 0.65rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 2px 8px;
+  background: #252525;
+  border-radius: 10px;
+}
+
+.stateLabel.recording {
+  color: #e74c3c;
+  background: #3a1a1a;
+}
+
+.stateLabel.playing {
+  color: #2ecc71;
+  background: #1a3a1a;
+}
+
+.stateLabel.overdubbing {
+  color: #f39c12;
+  background: #3a2a0a;
+}
+
+.headerButtons {
+  display: flex;
+  gap: 6px;
+}
+
+.fxBtn {
+  background: none;
+  border: 1px solid #444;
+  color: #888;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.fxBtn:hover {
+  background: #333;
+  color: #ccc;
+}
+
+.fxBtn.fxActive {
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+
+.settingsBtn {
+  background: none;
+  border: 1px solid #444;
+  color: #888;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.65rem;
+}
+
+.settingsBtn:hover {
+  background: #333;
+  color: #ccc;
+}
+
+.body {
+  display: flex;
+  gap: 12px;
+  align-items: stretch;
+}
+
+.waveformArea {
+  flex: 1;
+}
+
+.mixControls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.info {
+  font-size: 0.6rem;
+  color: #555;
+  text-align: right;
+}

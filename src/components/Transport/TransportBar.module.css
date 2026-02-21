@@ -1,0 +1,64 @@
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.transportBtn {
+  background: #333;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.transportBtn:hover {
+  background: #444;
+}
+
+.transportBtn.active {
+  background: #ff6b35;
+  color: #000;
+  border-color: #ff6b35;
+}
+
+.transportBtn.stop {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+}
+
+.transportBtn.stop:hover {
+  background: #e74c3c;
+}
+
+.timeSig {
+  background: #222;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}

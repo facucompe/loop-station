@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.label {
+  font-size: 0.6rem;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.slider {
+  width: 60px;
+  height: 20px;
+  appearance: none;
+  background: #222;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 8px;
+  height: 16px;
+  background: #ff6b35;
+  border-radius: 2px;
+  cursor: grab;
+}
+
+.value {
+  font-size: 0.6rem;
+  color: #888;
+  font-family: 'Courier New', monospace;
+}

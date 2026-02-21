@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle {
+  width: 36px;
+  height: 20px;
+  background: #333;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #555;
+  transition: background 0.2s;
+}
+
+.toggle.on {
+  background: #ff6b35;
+  border-color: #ff6b35;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  top: 2px;
+  left: 2px;
+  transition: left 0.2s;
+}
+
+.toggle.on::after {
+  left: 18px;
+}
+
+.label {
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.volume {
+  width: 60px;
+  height: 16px;
+  appearance: none;
+  background: #222;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.volume::-webkit-slider-thumb {
+  appearance: none;
+  width: 8px;
+  height: 14px;
+  background: #ff6b35;
+  border-radius: 2px;
+}
