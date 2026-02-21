@@ -55,8 +55,7 @@ export function LooperLayout() {
   if (!isInitialized) {
     return (
       <div className={styles.initOverlay}>
-        <div className={styles.title}>RC-505 MK2</div>
-        <div className={styles.subtitle}>Web Loop Station</div>
+        <div className={styles.title}>Web Loop Station</div>
         <button className={styles.startBtn} onClick={init}>
           Start
         </button>
